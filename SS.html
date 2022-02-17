@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- VBR PROJECTS -->
+<!-- V BHARGAV REDDY -->
+<!-- LOGIN PAGE -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>WELCOME TO SS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style type="text/css">
+         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(ss.png); 
+background-size:cover;
+background-position:center;
+color:#fff !important;
+} 
+.bg-img{
+  height: 100vh;
+  background-size: contain;
+  background-position: all;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 130vh;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.bg-dark-1{
+  top: 100%;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+
+.field input[type="submit"]{
+  background: grey;
+  border: 1px solid black;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: black;
+  color : white;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+#logo{
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+}
+.log{
+   position: absolute;
+   left: 37%;
+  z-index: 999;
+  padding: 10px 32px;
+}
+@media screen and (max-width: 800px) {
+  body{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(ss.png); 
+background-size:cover;
+background-position:center;
+color:#fff !important;
+} 
+.bg-img{
+  
+  height: 100vh;
+  background-size: contain;
+  background-position: all;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 140vh;
+  background: rgba(0,0,0,0.7);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 40px 22px;
+  width: 280px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.content header{
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+
+.field input[type="submit"]{
+  background: grey;
+  border: 1px solid black;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: black;
+  color : white;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+#logo{
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+}
+.log{
+   position: absolute;
+   top: 4%;
+   left: 14%;
+  z-index: 999;
+  padding: 10px 32px;
+}
+  }
+      </style>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="log">
+      <center><h1 id="logo">SS SERVICES</h1></center>
+   </div>
+      <div class="bg-img">
+         <div class="content">
+            <header>OWNER LOGIN</header>
+            <form onsubmit="return valid();" action="home.html" method="post" autocomplete="off" name="google-sheet">
+               <div class="field">
+                  <span class="fa fa-user"></span>
+                  <input type="text" name="Username" id="us" required placeholder="Name">
+               </div>
+                  <input type="text" name="Time" id="time" style="display: none;" value="202">
+                  <input type="text" name="Attempt" id="va" style="display: none;" value="true">
+               <div class="field space">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" name="Password" id="ps" class="pass-key" required placeholder="Password">
+                  <span class="show">SHOW</span>
+               </div>
+                     <br>
+               <div class="field">
+                  <input type="submit" class="btn" value="LOGIN">
+               </div>
+               <div>
+                  <p id="msg"></p>
+               </div>
+            </form>
+         </div>
+      </div>
+      <footer class="bg-dark-1">
+  <section id="footer" class="py-5">
+    <div class="container text-center">
+      <i class="fa fa-twitter"></a>
+      <a class="fa fa-instagram"></a>
+      <a class="fa fa-facebook"></a>
+      <a class="fa fa-snapchat"></a>
+      <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2021 designed by V BHARGAV REDDY</h6>
+    </div>
+  </section>
+</footer>
+
+
+      <script>
+         const pass_field = document.querySelector('.pass-key');
+         const showBtn = document.querySelector('.show');
+         showBtn.addEventListener('click', function(){
+          if(pass_field.type === "password"){
+            pass_field.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+          }else{
+            pass_field.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+          }
+         });
+      </script>
+      <script type="text/javascript">
+            var today = new Date();
+            var z;
+            var m = today.getHours();
+            if(m>12){
+                z='PM'
+            }
+            else{
+                z='AM';
+            }
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+'  '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+" "+z;
+            document.getElementById('time').value = date;
+            function valid(){
+            const id = document.getElementById('us').value;
+            const ps = document.getElementById('ps').value;
+            const va = document.getElementById('va');
+            if((id=="SS Works" && ps=="0000" )||(id=="nuthan" && ps=="1234" )||(id=="bhadri" && ps=="1111" )||(id=="muni" && ps=="chemeli" )||(id=="admin" && ps=="admin" )){
+               document.getElementById('msg').innerHTML = "<br> <p style='color:white;' >Login success</p>";
+               window.open('home.html','_self');
+               va.value = "True";
+               return true;
+            }
+            else{
+               document.getElementById('msg').innerHTML = "<br> <p style='color:white;' >Invalid Credintials</p>";
+               va.value = "False";
+               return false;
+            }
+         }
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbwvNM_F38oe-4zp6HaEqonntVXP4rCdL75P9rO55Ln9pn6tL2IofZ3n2FlaVvqDbhruVA/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => valid())
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   </body>
+</html>

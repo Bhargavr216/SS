@@ -1,0 +1,16 @@
+<html>
+<body>
+	<div id="first">Hello</div>
+	<div id="second">king</div>
+	<script type="text/javascript">
+	setInterval(function() {
+    $('p').fadeOut(500, function() {
+        var $this = $(this);
+        $this.text($this.text() == 'Connected' ? '2457' : 'Connected');        
+        $this.toggleClass('first second');        
+        $this.fadeIn(500);
+    });
+}, 3000);​
+	</script>
+	</body>
+</html>

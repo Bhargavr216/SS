@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="style1.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+             body{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(ss.png); 
+background-size:cover;
+background-position:center;
+color:#fff !important;
+}             
+</style>
+</head>
+<body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+  <ul class="ne">
+  <li class="nam">SS</li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><div class="dropdown">
+  <button class="dropbtn">Services</button>
+  <div class="dropdown-content">
+  <a href="#">Govt</a>
+  <a href="#">Education</a>
+  <a href="#">Others</a>
+  </div>
+</div></li>
+  <li><div class="dropdown">
+  <button class="dropbtn">Bill</button>
+  <div class="dropdown-content">
+  <a href="entry.html">Entry</a>
+  <a href="#">View</a>
+  <a href="bill.html">Excel view</a>
+  </div>
+</div></li>
+  <li style="float: right;"><a href="ss.html"><i class="fa fa-sign-out"></i>&nbsp;logout</a></li>
+  <li>
+  <div class="autocomplete">
+    <input id="myInput" type="text" name="myCountry" placeholder="Search..">
+    <button class="bb" style="padding: 5px;"><span><i class="fa fa-search"></i></span></button> 
+  </div>
+</li>
+</ul>
+<div class="container">
+   <!--WELCOME <p id="ms"></p>-->  
+   <div style="margin-top: 9%;">
+    <div class="hea">BILL ENTRY</div>
+   <form onsubmit="valid();" method="post" autocomplete="off" name="google-sheet">
+                                        <div class="form-group">
+                                          <label>ENTER Shop-Number: </label><input type="number" name="Shop_Number" class="form-control" placeholder="Shop Number *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ENTER Name:</label>
+                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>ENTER Bill Type:</label>
+                                            <input type="text" name="Bill_Type" class="form-control" placeholder="Bill Type *" value="" required=""/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>ENTER Service Number:</label>
+                                            <input type="text" name="Service_No" class="form-control" placeholder="Enter Service number *" value=""/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>ENTER Price:</label>
+                                            <input type="number" name="Price" class="form-control" placeholder="Enter the price *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                        <label>Automatic TimeStamp:</label>
+                                        <input type="text" id="date" name="Time" class="form-control" readonly="readonly"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <table style="border: none;"><tr>
+                                                <td>
+                                            <input type="submit" style="background-color: orange;" id="hh" name="submit" class="btnSubmit btn-block" value="ADD" />
+                                        </td>
+                                            <td><input type="button" style="background-color: green;" id="hh" onclick="window.location.href='entry.html'" class="btnSubmit btn-block" value="CLEAR" />
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan="2"><center><h4><p id="msg"></p></h4></center></td></tr>
+                                        <tr class="fu"><td><input type="button" style="background-color: violet;" id="hh" onclick=" window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vQgL2DLx2-SX5IdjIVvnnOMO61JuD8LJeufN5RO29XULKGid2hdqk1Las4c4XOiXivaX4TYFWu0A9dE/pubhtml?gid=0&single=true','_blank')" class="btnSubmit btn-block" value="VIEW BILL" />
+                                        </td><td><input type="button" id="hh" style="background-color: skyblue;" onclick=" window.open('bill.html','_blank')" class="btnSubmit btn-block" value="VIEW IN EXCEL" />
+                                        </td>
+                                        </tr>
+                                            </table>
+                                        </div>
+                                    </form>
+</div>
+<footer class="bg-dark-1">
+  <section id="footer" class="py-5">
+       <div class="container text-center">
+      <a class="fa fa-instagram"></a>
+      <a class="fa fa-facebook"></a>
+      <a class="fa fa-snapchat"></a>
+      <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2021 designed by  V BHARGAV REDDY</h6>
+    </div>
+  </section>
+</footer>
+</div>
+          <script>
+            function valid(){
+              if(confirm("Do You Want to print the bill??")){
+                  window.open("www.google.com");
+                }
+            else{
+                  document.getElementById('msg').innerHTML="BILL ADDED SUCCESSFULLY";
+                }
+            }
+            var today = new Date();
+            var z;
+            var m = today.getHours();
+            if(m>12){
+                z='PM'
+            }
+            else{
+                z='AM';
+            }
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+'  '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+" "+z;
+            document.getElementById('date').value = date;       
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwc2gYyxyC6J-kJelRj6PagdGEr14pGkPDHdTbiQECRvcSl_nAtgDcp6l1S6LFaxOI/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => document.getElementById('msg'),innerHTML="BILL ADDED SUCCESSFULLY")
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/51f7ea6787.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
+</body>
+</html>
