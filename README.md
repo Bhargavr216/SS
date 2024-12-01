@@ -16,22 +16,26 @@ This is a multi-page web application for managing and tracking services provided
   
 ## Screenshots
 
-#Login page
+## Login page
 ![image](https://github.com/user-attachments/assets/c71a3428-e772-4b6f-bfce-d9af4f5027ac)
 
-#Home Page
+## Home Page
 ![image](https://github.com/user-attachments/assets/417f62b1-e8cd-451d-bc00-5eab59ecb947)
 
-#Bill entry
+## Bill entry
 ![image](https://github.com/user-attachments/assets/c51d5633-c3fc-49f0-ae3d-141c3085576c)
 
-#Bill records in Excel
+## Bill records in Excel
 ![image](https://github.com/user-attachments/assets/5e192878-4782-4048-8777-2295076f25fb)
 
-#List of login users
+## List of login users
 ![image](https://github.com/user-attachments/assets/c845c45e-4d80-4492-b838-91eb370c7af2)
 
 
+## Demo Link
+
+Use admin & admin as password and username
+#https://bhargavr216.github.io/SS/SS.html
 
 
 ## How to Use
